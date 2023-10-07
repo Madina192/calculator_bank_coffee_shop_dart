@@ -24,7 +24,7 @@ void auth(Controller controller) {
         isValid = true;
       }
     }
-    // isValid = !isDone();
+    //isValid = !isDone(); //fix it!!!
   }
 }
 
@@ -108,9 +108,9 @@ class UserAdmin {
   void addUser() {
     bool wantAddMore = true;
     while (true) {
-      var login = inputHandler(outputText: 'Enter login: ');
-      var password = inputHandler(outputText: 'Enter password: ');
-      var balance = inputHandler(outputText: 'Enter balance: ');
+      var login = inputHandler(outputText: 'Enter login for a new user: ');
+      var password = inputHandler(outputText: 'Enter password for a new user: ');
+      var balance = inputHandler(outputText: 'Enter balance for a new user: ');
       newClient = {
         'role': 'client',
         'login': login,
